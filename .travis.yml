@@ -1,10 +1,15 @@
 language: ruby
-
 rvm:
- - 2.0.0
-
+- 2.0.0
 script:
- - bundle exec rake db:migrate --trace
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake db:test:prepare
- - bundle exec rspec -fd spec/
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
+deploy:
+  provider: heroku
+  api_key:
+    secure: FcvRlQ0F8xGalIsJ3jHPq1rLkyQ7dPccWIKzHjQHhPJComvpCJOGT0U/iT2JgEngLHfB8ofjrR0sJsOj4NtFZWyES0DgbUJEEephjGBfCOUGznEGufg8fQCk4gAG+QCFK+nCr0JBXS/xTFq0wOPo2QjNDuL5rm1TDoK5VYRoKTc=
+  app: wepa
+  on:
+    repo: AlePaa/wepa
