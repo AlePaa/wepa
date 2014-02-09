@@ -7,6 +7,17 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov', require: false
+end
+
+group :test do
+  gem 'rspec-rails', '~> 2.14.1'
+end
+
 group :production do
    gem 'pg'
    gem 'rails_12factor' 
