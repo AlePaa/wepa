@@ -9,7 +9,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: FcvRlQ0F8xGalIsJ3jHPq1rLkyQ7dPccWIKzHjQHhPJComvpCJOGT0U/iT2JgEngLHfB8ofjrR0sJsOj4NtFZWyES0DgbUJEEephjGBfCOUGznEGufg8fQCk4gAG+QCFK+nCr0JBXS/xTFq0wOPo2QjNDuL5rm1TDoK5VYRoKTc=
-  app: wepa
+    secure: JYdese1PFVKIP24LNUgSrVztPnLzZUthtLIl3YojuE0IhQW5qy15FH6ZLFy30h7c7OaYE7fYUysRkP3OpSiz3YS5mo3OqSDUkHCiE8W4NeAcpwRcOWtMPKMZSKsERSFVYA9qNnb5o2Y47nQHifn9In47wxNvdZOJ9ialmRsd+VA=
+  app: alpa-wadror
   on:
     repo: AlePaa/wepa
