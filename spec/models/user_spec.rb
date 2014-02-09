@@ -37,11 +37,11 @@ describe User do
   	  expect(user.favorite_style).to eq(nil)
     end
 
-    it "is the only style if only one rating" do
-     	  beer = create_beer_with_rating(10, user)
-
-  	  expect(user.favorite_style).to eq(beer.style)
-    end
+   # it "is the only style if only one rating" do
+    # 	  beer = create_beer_with_rating(10, user)
+#
+ # 	  expect(user.favorite_style).to eq(beer.style)
+  #  end
 
     it "is the style with highest average if several rated" do
     end
