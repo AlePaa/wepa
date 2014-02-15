@@ -17,6 +17,12 @@
   </p>
 <% end %>
 
+<% if @user.ratings.any? %>
+    <p>Favorite beer: <%= @user.favorite_beer %> </p>
+    <p>Favorite brewery: <%= @user.favorite_brewery.name %> </p>
+    <p>Preferred style: <%= @user.favorite_style %> </p>
+<% end %>
+
 <h3>ratings</h3>
 
 <% if @user.ratings.empty? %>
@@ -38,3 +44,4 @@
   <br>
   <%= link_to 'Remove user account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
+
