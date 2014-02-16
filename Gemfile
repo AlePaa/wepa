@@ -12,16 +12,18 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', require: false
+  gem 'rspec-rails', '~> 2.14.1'
+  gem 'webmock'
 end
 
-group :test do
-  gem 'rspec-rails', '~> 2.14.1'
-end
+gem "rails-settings-cached", "0.3.1"
 
 group :production do
    gem 'pg'
    gem 'rails_12factor' 
 end
+
+gem 'httparty'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

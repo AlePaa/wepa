@@ -31305,3 +31305,3572 @@ Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 19:00:35 
 
 
 Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 19:00:35 +0200
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:17 +0200
+
+
+Started GET "/beer_clubs" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[36mBeerClub Load (0.5ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs"[0m
+  Rendered beer_clubs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+
+
+Started GET "/ratings" for 127.0.0.1 at 2014-02-15 19:31:18 +0200
+Processing by RatingsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings"
+  [1m[36mRating Load (0.5ms)[0m  [1mSELECT "ratings".* FROM "ratings"[0m
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? ORDER BY "beers"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  Rendered ratings/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 82ms (Views: 77.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 19:31:19 +0200
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-15 20:06:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.2ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (1.6ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered beers/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 167ms (Views: 142.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:08 +0200
+
+
+Started GET "/breweries" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.2ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:09 +0200
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 68ms (Views: 14.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:10 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:06:14 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:06:19 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 889ms
+
+ActionView::Template::Error (undefined local variable or method `places' for #<#<Class:0x007f6bf49ee2a8>:0x007f6bf4aa2a50>):
+     7: 
+     8: <% if @places %>
+     9:   <ul>
+    10:     <% places.each do |place| %>
+    11:       <li><%= place.name %></li>
+    12:     <% end %>
+    13:   </ul>
+  app/views/places/index.html.erb:10:in `_app_views_places_index_html_erb___1519245337238094234_70050821136780'
+  app/controllers/places_controller.rb:13:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 371ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:41 +0200
+
+
+Started GET "/breweries" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.4ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:47 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Vantaa", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 532ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:11:51 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:12:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Vantaa", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 373ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:36 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:12:39 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5613ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:12:44 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 376ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:14:55 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:18:19 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__130787580170698640__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:20:12 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__130787580170698640__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:20:32 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+Completed 500 Internal Server Error in 360ms
+
+NameError (undefined local variable or method `places' for #<PlacesController:0x007f6bf52b1570>):
+  app/controllers/places_controller.rb:10:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:22:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 406ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:22:01 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 20:29:25 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10797ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 20:29:36 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 21:55:13 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5873ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:19 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 21:55:41 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"New York", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 2119ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 21:55:44 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 21:59:57 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3486ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:00:00 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:12:24 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"dsfgdsgk", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 2170ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:26 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:31 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:12:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"asfas", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 374ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:12:33 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:12:34 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:15:42 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"", "commit"=>"Search"}
+Completed 500 Internal Server Error in 557ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  lib/beermapping_api.rb:6:in `places_in'
+  app/controllers/places_controller.rb:6:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 25ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:07 +0200
+
+
+Started GET "/locations" for 127.0.0.1 at 2014-02-15 22:16:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (42.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:17 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:16:20 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"asdfg", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 3794ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:16:24 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:19:01 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:20:51 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:20:53 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"adsfaf", "commit"=>"Search"}
+Redirected to 
+Completed 500 Internal Server Error in 372ms
+
+ArgumentError (wrong number of arguments (3 for 0..2)):
+  app/controllers/places_controller.rb:8:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:21:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"adsfaf", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 363ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:21:05 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:21:06 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:23:37 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:38 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:23:53 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:05 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:24:53 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:54 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 431ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:57 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:24:58 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:24:59 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"asdasf", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 371ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:00 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:21 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:25:23 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"asdasd", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 371ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:25:23 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:23 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:24 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"fsafsf", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 376ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:25:50 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:27:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"asdsad", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 17920ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:24 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-15 22:27:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwZriK8Q3rWhV2TRG05AMy7pGkiF896swT+blbG4Joo=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10504ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 22:27:41 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 103ms (Views: 81.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:04 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:05 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 18:07:05 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:07:07 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  caches_action: :index, :expires_in 60
+                ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1323674002297773806__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:07:25 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  caches_action: :index, :expires_in(60)
+                ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1323674002297773806__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:07:26 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  caches_action: :index, :expires_in(60)
+                ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1323674002297773806__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:07:44 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  caches_action: :index
+                ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1323674002297773806__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:07:48 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  caches_action: :index
+                ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1323674002297773806__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:08:09 +0200
+
+SyntaxError (/home/alpa/Projects/ruby/wepa/app/controllers/places_controller.rb:3: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1323674002297773806__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:08:28 +0200
+
+ActionController::RoutingError (undefined method `caches_action' for PlacesController:Class):
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:08:56 +0200
+
+ActionController::RoutingError (undefined method `caches_action' for PlacesController:Class):
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (86.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 18:10:51 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:51 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:51 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:51 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:51 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:52 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 18:10:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSettings (20140216161322)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "settings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "var" varchar(255) NOT NULL, "value" text, "thing_id" integer, "thing_type" varchar(30), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_settings_on_thing_type_and_thing_id_and_var" ON "settings" ("thing_type", "thing_id", "var")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140216161322"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mSettings Load (0.1ms)[0m  [1mSELECT "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = 'beermapping_apikey' ORDER BY "settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "settings" ("created_at", "updated_at", "value", "var") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 16 Feb 2014 16:14:22 UTC +00:00], ["updated_at", Sun, 16 Feb 2014 16:14:22 UTC +00:00], ["value", "--- fccf7b4bc6d32077346e56a9a54efc25\n...\n"], ["var", "beermapping_apikey"]]
+  [1m[35m (19.7ms)[0m  commit transaction
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:57:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `name' for :id:Symbol):
+     9:   <table>
+    10:     <thead>
+    11:       <% Place.rendered_fields.each do |f| %>
+    12:         <td><%= link to f.name, f %></td>    
+    13:       <% end %>
+    14:     </thead>
+    15:     <% @places.each do |place| %>
+  app/views/places/index.html.erb:12:in `block in _app_views_places_index_html_erb___3545404288169814213_70101351052220'
+  app/views/places/index.html.erb:11:in `each'
+  app/views/places/index.html.erb:11:in `_app_views_places_index_html_erb___3545404288169814213_70101351052220'
+  app/controllers/places_controller.rb:12:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (33.5ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.5ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:57:34 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `to' for #<#<Class:0x007f837c3bccf0>:0x007f838b8e4660>):
+     9:   <table>
+    10:     <thead>
+    11:       <% Place.rendered_fields.each do |f| %>
+    12:         <td><%= link to f, f %></td>    
+    13:       <% end %>
+    14:     </thead>
+    15:     <% @places.each do |place| %>
+  app/views/places/index.html.erb:12:in `block in _app_views_places_index_html_erb___3545404288169814213_70101479454680'
+  app/views/places/index.html.erb:11:in `each'
+  app/views/places/index.html.erb:11:in `_app_views_places_index_html_erb___3545404288169814213_70101479454680'
+  app/controllers/places_controller.rb:12:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:57:49 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 19:57:50 +0200
+
+
+Started GET "/places/6742" for 127.0.0.1 at 2014-02-16 19:57:57 +0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PlacesController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2027465862564299554__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:58:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"6742", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 5933ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:10 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:19 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 19:58:20 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:59:09 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `id_path' for #<#<Class:0x007f837c3bccf0>:0x007f837c4170b0>):
+    15:     <% @places.each do |place| %>
+    16:       <tr>
+    17:         <% Place.rendered_fields.each do |f| %>
+    18:           <td><%= link_to place.send(f), f %></td>
+    19:         <% end %>
+    20:       </tr>
+    21:     <% end %>
+  app/views/places/index.html.erb:18:in `block (2 levels) in _app_views_places_index_html_erb___3545404288169814213_70101351051980'
+  app/views/places/index.html.erb:17:in `each'
+  app/views/places/index.html.erb:17:in `block in _app_views_places_index_html_erb___3545404288169814213_70101351051980'
+  app/views/places/index.html.erb:15:in `each'
+  app/views/places/index.html.erb:15:in `_app_views_places_index_html_erb___3545404288169814213_70101351051980'
+  app/controllers/places_controller.rb:12:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:20 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:29 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 19:59:32 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 20:00:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `id' for :id:Symbol):
+    15:     <% @places.each do |place| %>
+    16:       <tr>
+    17:         <% Place.rendered_fields.each do |f| %>
+    18:           <td><%= link_to place.send(f), f.id %></td>
+    19:         <% end %>
+    20:       </tr>
+    21:     <% end %>
+  app/views/places/index.html.erb:18:in `block (2 levels) in _app_views_places_index_html_erb___3545404288169814213_70101351021360'
+  app/views/places/index.html.erb:17:in `each'
+  app/views/places/index.html.erb:17:in `block in _app_views_places_index_html_erb___3545404288169814213_70101351021360'
+  app/views/places/index.html.erb:15:in `each'
+  app/views/places/index.html.erb:15:in `_app_views_places_index_html_erb___3545404288169814213_70101351021360'
+  app/controllers/places_controller.rb:12:in `search'
+
+
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/alpa/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:12 +0200
+
+
+Started POST "/places" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 20:00:38 +0200
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-16 21:19:51 +0200
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (2.5ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (1.6ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered beers/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 95ms (Views: 45.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 21:19:52 +0200
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.5ms)[0m  SELECT "beers".* FROM "beers"
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered beers/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 21:21:25 +0200
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2014-02-16 21:25:28 +0200
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRating Exists (0.2ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."beer_id" = ? LIMIT 1  [["beer_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."beer_id" = ?[0m  [["beer_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."beer_id" = ?  [["beer_id", 1]]
+  Rendered beers/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 26ms (Views: 20.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-02-16 21:25:32 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer_clubs" for 127.0.0.1 at 2014-02-16 21:25:33 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[36mBeerClub Load (0.2ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs"[0m
+  Rendered beer_clubs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-16 21:25:34 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 31ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-02-16 21:25:35 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "username"=>"Aksu", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'Aksu' LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Completed 302 Found in 58ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:40 +0200
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l4sb6SO7jagVcg/U+y0fXIecEms9tzSdZ8/XQ029heI=", "username"=>"Aksu", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'Aksu' LIMIT 1
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 55ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35mRating Exists (0.1ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mBeerClub Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "beer_clubs" INNER JOIN "memberships" ON "beer_clubs"."id" = "memberships"."beer_club_id" WHERE "memberships"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mRating Load (0.1ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."user_id" = ?  [["user_id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered users/show.html.erb within layouts/application (15.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 21:25:50 +0200
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-02-16 21:25:52 +0200
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.6ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  [1m[35mBrewery Load (0.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBrewery Load (0.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBrewery Load (0.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mBrewery Load (0.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered beers/index.html.erb within layouts/application (16.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/beers/1" for 127.0.0.1 at 2014-02-16 21:25:55 +0200
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mBrewery Load (0.1ms)[0m  SELECT "breweries".* FROM "breweries" WHERE "breweries"."id" = ? ORDER BY "breweries"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRating Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE "ratings"."beer_id" = ? LIMIT 1[0m  [["beer_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."beer_id" = ?  [["beer_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("ratings"."score") AS avg_id FROM "ratings" WHERE "ratings"."beer_id" = ?[0m  [["beer_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered beers/show.html.erb within layouts/application (17.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/beer_clubs" for 127.0.0.1 at 2014-02-16 21:25:59 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[35mBeerClub Load (0.2ms)[0m  SELECT "beer_clubs".* FROM "beer_clubs"
+  Rendered beer_clubs/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/beer_clubs/1" for 127.0.0.1 at 2014-02-16 21:26:03 +0200
+Processing by BeerClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeerClub Load (0.2ms)[0m  SELECT "beer_clubs".* FROM "beer_clubs" WHERE "beer_clubs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."beer_club_id" = ?[0m  [["beer_club_id", 1]]
+  Rendered beer_clubs/show.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/beer_clubs/2" for 127.0.0.1 at 2014-02-16 21:26:05 +0200
+Processing by BeerClubsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBeerClub Load (0.4ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs" WHERE "beer_clubs"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."beer_club_id" = ?  [["beer_club_id", 2]]
+  Rendered beer_clubs/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/memberships/new" for 127.0.0.1 at 2014-02-16 21:26:07 +0200
+Processing by MembershipsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mBeerClub Load (0.1ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."beer_club_id" = ? AND "users"."id" = 11 LIMIT 1[0m  [["beer_club_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."beer_club_id" = ? AND "users"."id" = 11 LIMIT 1[0m  [["beer_club_id", 2]]
+  Rendered memberships/_form.html.erb (8.9ms)
+  Rendered memberships/new.html.erb within layouts/application (13.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+Completed 200 OK in 78ms (Views: 65.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/beer_clubs/1" for 127.0.0.1 at 2014-02-16 21:26:14 +0200
+Processing by BeerClubsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeerClub Load (0.1ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs" WHERE "beer_clubs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."beer_club_id" = ?  [["beer_club_id", 1]]
+  Rendered beer_clubs/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.3ms)

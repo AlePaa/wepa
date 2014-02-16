@@ -17,6 +17,10 @@ Ratebeer::Application.routes.draw do
   get 'signin', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
 
+  resources :places, only:[:index, :show]
+  get 'places', to: 'places#index'
+  post 'places', to:'places#search'
+ 
   root 'breweries#index'
 
 
